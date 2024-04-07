@@ -34,3 +34,6 @@
 
 6. Deployment
     * We can use the created model for fraud detection that fast and can be close to real-time.
+---
+References:
+https://www.kaggle.com/code/janiobachmann/credit-fraud-dealing-with-imbalanced-datasets
