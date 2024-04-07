@@ -1,4 +1,5 @@
 **Credit Fraud project** to classify fraud and non-fraud.
+https://www.kaggle.com/code/tharawitj/frauddetection-nearmiss-smote
 ---
 ### CRISP-DM processes for data mining.
 1. Business Understanding
