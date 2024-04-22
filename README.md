@@ -4,7 +4,7 @@ https://www.kaggle.com/code/tharawitj/frauddetection-nearmiss-smote
 ### CRISP-DM processes for data mining.
 1. Business Understanding
     * Credit fraud happened by information or credit card stolen and cause problems to bank's reputation, cost to investigate and financial Losses.
-    * This project credit fraud aim to classify fraud and can improve to fraud detection in the future.
+    * Both fraud and non fraud need to be predicted correctly and fast for the most satisfying customers. 
 
 2. Data Understanding
     * 1081 duplicate rows and 19 of them are fraud.
@@ -31,10 +31,17 @@ https://www.kaggle.com/code/tharawitj/frauddetection-nearmiss-smote
     * Plot learning Curve to observe overfitting.
         * Logistic Regression and SVC are good fitting.
     * Try to improve by GridSearchCV for hyperparameter tuning.
-    * Logistic Regression high score by precision and recall, ROC-AUC and much more inexpensive(faster) with SMOTE compare to SVC.
+    * NearMiss (scores are average by fraud and non fraud)
+        * Logistic Regression : average precision 96% and average recall 96%, ROC-AUC 94.3%.
+        * SVC : average precision 97% and average recall 97%, ROC-AUC 96.3%.
+    * SMOTE (scores are average by fraud and non fraud)
+        * Logistic Regression : average precision 95% and average recall 95%, ROC-AUC 94.7%.
+        * SVC : I decide to not train this model with SMOTE because it too expensive.
+
+    * in Conclusion both SVC and Logistic Regression are good in accuracy result but big different on run-time, Logistic Regression is much more faster so I decide to using this model.
 
 6. Deployment
-    * We can use the created model for fraud detection that fast and can be close to real-time.
+    * We can use the created model for fraud detection that fast enough to be close to real-time.
 ---
 References:
 https://www.kaggle.com/code/janiobachmann/credit-fraud-dealing-with-imbalanced-datasets
