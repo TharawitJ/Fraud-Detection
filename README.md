@@ -28,7 +28,7 @@ https://www.kaggle.com/code/tharawitj/frauddetection-nearmiss-smote
         4. XGB Classifier
 
 5. Evaluate Model
-    * Plot learning Curve to observe overfitting.
+    * Plot Learning Curve to observe overfitting.
         * Logistic Regression and SVC are good fitting.
     * Try to improve by GridSearchCV for hyperparameter tuning.
     * NearMiss (scores are average by fraud and non fraud)
